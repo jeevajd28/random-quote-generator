@@ -1,0 +1,91 @@
+@import "./reset";
+@import "./variables";
+
+/********Import Google Fonts*******/
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Ubuntu:wght@700&display=swap");
+.container {
+  background-image: linear-gradient(to bottom, rgb(125, 88, 185), purple);
+  height: 100vh;
+  font-size: 100%;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+
+  &_fst {
+    width: 80%;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 4px;
+    top: 30px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 2px $shadow_clr1, 4px 4px 2px $shadow_clr2;
+  }
+}
+
+@mixin fontp {
+  font: {
+    size: 20px;
+    weight: 500;
+  }
+}
+
+.desc {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  @include fontp;
+}
+
+h1 {
+  font: {
+    size: larger;
+    weight: 700;
+  }
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content {
+  text-indent: 30px;
+  margin: 30px;
+  font-family: "Lora", serif;
+  text-align: center;
+  @include fontp;
+}
+
+.author {
+  text-align: right;
+}
+
+.bottom {
+  position: relative;
+  top: 80px;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $white;
+}
+
+.btn {
+  background-color: transparent;
+  text-align: center;
+  padding: 12px 15px;
+  color: $white;
+  box-shadow: 3px 3px 2px $shadow_clr1, 4px 4px 2px $shadow_clr2;
+  border: 1px solid $white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.myName {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  @include fontp;
+}
