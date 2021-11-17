@@ -1,4 +1,4 @@
-# React-quote-generator
+# Random-quote-generator
 
 ## Description
 
